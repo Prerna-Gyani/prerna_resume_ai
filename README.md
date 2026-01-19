@@ -181,7 +181,7 @@ flowchart LR
     GEN --> OUT[PDF & DOCX Output]
     OUT --> U
 ```
- User interacts through a Streamlit web interface
+* User interacts through a Streamlit web interface
 * Resume content is scored for ATS compatibility
 * AI enhances the resume content
 * LaTeX templates ensure professional formatting
