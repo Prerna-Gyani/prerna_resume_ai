@@ -1,0 +1,8 @@
+streamlit
+python-docx
+PyMuPDF
+pylatex
+openai
+google-generativeai
+jinja2
+reportlab
