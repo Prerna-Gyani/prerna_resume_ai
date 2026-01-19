@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- PACKAGES ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% ---------- FORMATTING ----------
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black
+}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\LARGE \textbf{{{ name }}}} \\[4pt]
+    {{{ email }}} \,|\, {{{ phone }}} \,|\, {{{ location }}}
+\end{center}
+
+% ---------- SUMMARY ----------
+\section*{Professional Summary}
+{{{ summary }}}
+
+% ---------- SKILLS ----------
+\section*{Skills}
+\begin{itemize}
+{{{ skills }}}
+\end{itemize}
+
+% ---------- EXPERIENCE ----------
+\section*{Experience}
+{{{ experience }}}
+
+% ---------- PROJECTS ----------
+\section*{Projects}
+{{{ projects }}}
+
+% ---------- EDUCATION ----------
+\section*{Education}
+{{{ education }}}
+
+\end{document}
