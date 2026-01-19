@@ -171,6 +171,7 @@ An AI-powered resume optimization platform that evaluates, enhances, and generat
 ---
 
 ## System Architecture 1: High-Level System Architecture
+```
 flowchart LR
     U[User] -->|Resume Upload / Manual Entry| UI[Streamlit Web UI]
     UI --> ATS[ATS Scoring Engine]
@@ -179,7 +180,7 @@ flowchart LR
     TPL --> GEN[Resume Generator]
     GEN --> OUT[PDF & DOCX Output]
     OUT --> U
-
+```
 
 ---
 
