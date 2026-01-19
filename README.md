@@ -203,8 +203,8 @@ flowchart LR
 ### 📝 Manual Resume Input
 
 ```
-Name: Rahul Sharma
-Email: rahul.sharma@email.com
+Name: ABC Gyani
+Email: abc.gyani@gmail.com
 Phone: +91-98XXXXXX21
 
 Education:
@@ -252,7 +252,7 @@ Buttons:
 ## ✨ AI-ENHANCED RESUME (Sample Output)
 
 ```
-Rahul Sharma
+ABC Gyani
 Data Analyst | AI & ML Enthusiast
 
 Professional Summary:
