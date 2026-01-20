@@ -59,6 +59,27 @@ This modular design ensures clarity, maintainability, and scalability.
 
 ---
 
+## Project Structure 
+```
+resume-ai/
+│
+├── app.py            # Main Streamlit app (entry point)
+├── app1.py            # Main Streamlit app (entry point)
+├── ats.py            # ATS scoring logic
+├── parser.py         # Resume parsing (PDF / DOCX)
+├── enhancer.py       # OpenAI + Gemini enhancement
+│
+├── templates/
+│   └── autocv.tex    # LaTeX resume template
+│
+├── utils.py          # PDF & DOCX generation
+├── requirements.txt
+└── README.md
+
+```
+
+
+
 ## Sample Output – Example 1 (Manual Resume Input)
 
 ### User Input
