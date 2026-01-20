@@ -145,28 +145,7 @@ Improvement: +30 points
 
 * Platform: Streamlit Cloud
 * Entry Point: app.py
-* Secure API key handling via environment variables
-
----
-
-## Use Cases
-
-* Job seekers optimizing resumes for ATS systems
-* Students and fresh graduates preparing professional resumes
-* Academic AI agent projects
-* Resume optimization demonstrations
-
----
-
-## Conclusion
-
-This project demonstrates the practical application of AI in resume optimization by combining ATS analysis, content enhancement, and professional formatting into a single automated workflow. The system delivers measurable improvements in ATS scores while maintaining high presentation standards.
-
----
-
-## Project Summary
-
-An AI-powered resume optimization platform that evaluates, enhances, and generates ATS-friendly resumes with professional LaTeX formatting.
+* Secure API key handling via environment variables and keys to be saved in secrets.toml
 
 ---
 
@@ -382,6 +361,26 @@ ATS Score (After): 88 / 100
 resume.docx
 resume.pdf
 ```
+
+---
+## Use Cases
+
+* Job seekers optimizing resumes for ATS systems
+* Students and fresh graduates preparing professional resumes
+* Academic AI agent projects
+* Resume optimization demonstrations
+
+---
+
+## Conclusion
+
+This project demonstrates the practical application of AI in resume optimization by combining ATS analysis, content enhancement, and professional formatting into a single automated workflow. The system delivers measurable improvements in ATS scores while maintaining high presentation standards.
+
+---
+
+## Project Summary
+
+An AI-powered resume optimization platform that evaluates, enhances, and generates ATS-friendly resumes with professional LaTeX formatting.
 
 ---
 
