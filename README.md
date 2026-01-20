@@ -72,6 +72,7 @@ resume-ai/
 ├── templates/
 │   └── autocv.tex    # LaTeX resume template
 │   └── autocv1.tex    # Add LaTeX template for simple resume generation
+│   └── autocvsimple.py    # LaTeX resume template
 │
 ├── utils.py          # PDF & DOCX generation
 ├── requirements.txt
