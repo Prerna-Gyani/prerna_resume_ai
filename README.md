@@ -170,7 +170,8 @@ An AI-powered resume optimization platform that evaluates, enhances, and generat
 
 ---
 
-## System Architecture 1: High-Level System Architecture
+## System Architecture 
+## Architecture 1: High-Level System Architecture
 ```
 flowchart LR
     U[User] -->|Resume Upload / Manual Entry| UI[Streamlit Web UI]
@@ -186,6 +187,68 @@ flowchart LR
 * AI enhances the resume content
 * LaTeX templates ensure professional formatting
 * Final resumes are generated and downloaded
+
+## Architecture 2: Modular Application Architecture
+```
+flowchart TB
+    subgraph UI
+        A[app.py<br/>Streamlit Interface]
+    end
+
+    subgraph Core Logic
+        B[parser.py<br/>Resume Parsing]
+        C[ats.py<br/>ATS Scoring]
+        D[enhancer.py<br/>AI Enhancement]
+        E[utils.py<br/>PDF & DOCX Generator]
+    end
+
+    subgraph Templates
+        F[autocv.tex<br/>LaTeX Template]
+    end
+
+    A --> B
+    A --> C
+    A --> D
+    A --> F
+    D --> E
+    F --> E
+```
+* app.py orchestrates the complete workflow
+* Each responsibility is isolated into independent modules
+* LaTeX templates are handled separately for clean formatting
+* Utilities manage document generation
+
+
+## Architecture 3: Detailed Data & Control Flow
+
+```
+sequenceDiagram
+    participant User
+    participant Streamlit
+    participant Parser
+    participant ATS
+    participant AI
+    participant Template
+    participant Generator
+
+    User->>Streamlit: Upload / Enter Resume
+    Streamlit->>Parser: Extract Resume Text
+    Parser-->>Streamlit: Parsed Text
+    Streamlit->>ATS: Calculate ATS Score
+    ATS-->>Streamlit: Initial Score
+    Streamlit->>AI: Enhance Resume Content
+    AI-->>Streamlit: Enhanced Resume
+    Streamlit->>ATS: Recalculate ATS Score
+    ATS-->>Streamlit: Updated Score
+    Streamlit->>Template: Apply LaTeX Template
+    Template->>Generator: Formatted Content
+    Generator-->>Streamlit: PDF & DOCX Files
+    Streamlit-->>User: Download Resume
+
+```
+* Shows step-by-step execution
+* Clearly demonstrates before vs after ATS scoring
+* Highlights AI and template integration
 
 ---
 
