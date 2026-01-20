@@ -173,7 +173,8 @@ Improvement: +30 points
 
 * Platform: Streamlit Cloud
 * Entry Point: app.py
-* Secure API key handling via environment variables and keys to be saved in secrets.toml
+* !! Download project repo add API keys in secrets.toml then can run on cloud
+* * Secure API key handling via environment variables and keys to be saved in secrets.toml
 
 ---
 
