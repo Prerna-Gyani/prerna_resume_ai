@@ -425,4 +425,5 @@ An AI-powered resume optimization platform that evaluates, enhances, and generat
 | Streamlit Cloud Ready | ✅      |
 
 ---
+© Developed by Prerna Gyanchandani
 
