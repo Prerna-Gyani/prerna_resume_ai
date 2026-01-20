@@ -63,16 +63,21 @@ This modular design ensures clarity, maintainability, and scalability.
 ```
 resume-ai/
 │
-├── app.py            # Main Streamlit app (entry point)
-├── app_latextemplate.py            # Streamlit app (with LaTeX Template)
+├── app.py            # Main Streamlit app (entry point) Implement AI Resume Builder with ATS scoring
+├── app_latextemplate.py            # Streamlit app (with LaTeX Template) Implement AI Resume Builder with ATS scoring
 ├── ats.py            # ATS scoring logic
 ├── parser.py         # Resume parsing (PDF / DOCX)
 ├── enhancer.py       # OpenAI + Gemini enhancement
 │
+│
+├── .streamlit/
+│   └── secrets.toml   # API keys
+│
+│  
 ├── templates/
 │   └── autocv.tex    # LaTeX resume template
 │   └── autocv1.tex    # LaTeX template
-│   └── autocvsimple.py    # # Add LaTeX template for simple resume generation
+│   └── autocvsimple.py    # Add LaTeX template for simple resume generation
 │
 ├── utils.py          # PDF & DOCX generation
 ├── requirements.txt
